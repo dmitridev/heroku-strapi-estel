@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bottom_buttons",
+  "info": {
+    "name": "bottom-buttons"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pictures": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
